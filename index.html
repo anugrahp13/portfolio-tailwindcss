@@ -30,22 +30,22 @@
                     <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
                         <ul class="block lg:flex font-semibold">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                                <a href="#home" class="text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About</a>
+                                <a href="#about" class="text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                                <a href="#portfolio" class="text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#skill" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Skill</a>
+                                <a href="#skills" class="text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Skills</a>
                             </li>
                             <li class="group">
-                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
+                                <a href="#blog" class="text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                                <a href="#contact" class="text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
                             </li>
                             <li class="mt-3 lg:mt-0 flex items-center pl-8">
                                 <div class="flex">
@@ -178,7 +178,7 @@
     <!-- Portfolio Section End -->
 
     <!-- Clients Section Start -->
-    <section id="skill" class="pt-36 pb-32 bg-slate-900 dark:bg-slate-300">
+    <section id="skills" class="pt-36 pb-32 bg-slate-900 dark:bg-slate-300">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto text-center mb-16">
@@ -287,22 +287,22 @@
                     <p class="font-medium text-md text-secondary md:text-lg">Silahkan tanyakan yang ingin kalian tanya atau kalian ingin mengajak saya bekerja sama</p>
                 </div>
             </div>
-            <form action="#">
+            <form onsubmit="sendMessage()">
                 <div class="w-full lg:w-2/3 lg:mx-auto">
                     <div class="w-full px-4 mb-8">
                         <label for="name" class="text-base text-primary font-bold">Nama</label>
-                        <input type="text" id="name" class="w-full dark:bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                        <input type="text" id="name" class="w-full dark:bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
                     </div>
                     <div class="w-full px-4 mb-8">
                         <label for="email" class="text-base text-primary font-bold">Email</label>
-                        <input type="email" id="email" class="w-full dark:bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                        <input type="email" id="email" class="w-full dark:bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
                     </div>
                     <div class="w-full px-4 mb-8">
-                        <label for="pesan" class="text-base text-primary font-bold">Pesan</label>
-                        <textarea type="pesan" id="email" class="w-full dark:bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                        <label for="message" class="text-base text-primary font-bold">Pesan</label>
+                        <textarea id="message" class="w-full dark:bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" required></textarea>
                     </div>
                     <div class="w-full px-4">
-                        <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                        <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
                     </div>
                 </div>
             </form>
@@ -344,7 +344,7 @@
 
     <!-- Back to top Start -->
     <a href="#home" id="totop" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse">
-        <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+        <span class="block w-5 h-5 border-t-4 border-l-4 rotate-45 mt-2"></span>
     </a>
     <!-- Back to top End -->
 
